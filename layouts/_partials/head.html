@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+	{{- if .IsHome -}}
+		{{ site.Title }}
+	{{- else -}}
+		{{ .Title }} · {{ site.Title }}
+	{{- end -}}
+</title>
+
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+
+{{/* Override of the rewired theme's head (FR-W6): fonts and icons are self-hosted from
+     static/vendor instead of Google Fonts and cdnjs, so pages make no third-party requests. */}}
+<link rel="stylesheet" href="{{ "vendor/fira-code/fira-code.css" | relURL }}">
+<link rel="stylesheet" href="{{ "vendor/fontawesome/css/all.min.css" | relURL }}">
+
+{{ partial "head/css.html" . }}
+{{ partial "head/js.html" . }}
+{{ partial "head/math.html" . }}

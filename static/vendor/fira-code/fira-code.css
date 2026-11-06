@@ -1,0 +1,6 @@
+/* Fira Code, self-hosted (FR-W6: no third-party requests). Replaces the theme's Google Fonts link.
+   Fira Code by Nikita Prokopov, SIL Open Font License 1.1: https://github.com/tonsky/FiraCode */
+@font-face { font-family: "Fira Code"; font-style: normal; font-weight: 400; font-display: swap; src: url("FiraCode-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Fira Code"; font-style: normal; font-weight: 500; font-display: swap; src: url("FiraCode-Medium.woff2") format("woff2"); }
+@font-face { font-family: "Fira Code"; font-style: normal; font-weight: 600; font-display: swap; src: url("FiraCode-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "Fira Code"; font-style: normal; font-weight: 700; font-display: swap; src: url("FiraCode-Bold.woff2") format("woff2"); }

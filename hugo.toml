@@ -1,0 +1,73 @@
+baseURL = "https://dogukangozler.com/"
+title = "dogukangozler.com"
+theme = "rewired"
+locale = "en-US"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  author = "Dogukan Gozler"
+  description = "Personal website of Dogukan Gozler: about, CV and posts."
+  descriptionLines = [
+    "TODO: one line about who you are,",
+    "and one about what you work on.",
+  ]
+  tagline = "I write on the [blog](/posts/) and keep my [CV](/cv/) here."
+  blogPageSize = 5
+
+  [params.toc]
+    enabled = true
+    ordered = false
+    startLevel = 1
+    endLevel = 3
+
+  [params.footer]
+    text = 'dogukangozler.com // made with [Hugo](https://gohugo.io/) // theme [rewired](https://github.com/RigleGit/rewired) // no cookies, no tracking'
+    prompt = "dogukan@dogukangozler.com:~$"
+
+  [[params.social]]
+    name = "GitHub"
+    url = "https://github.com/dgkngzlr"
+    icon = "fa-brands fa-github"
+
+[[menus.main]]
+  name = "home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "blog"
+  pageRef = "/posts"
+  weight = 20
+
+[[menus.main]]
+  name = "cv"
+  pageRef = "/cv"
+  weight = 30
+
+[[menus.main]]
+  name = "about"
+  pageRef = "/about"
+  weight = 40
+
+# FR-W6: no analytics, no third-party embeds.
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.x]
+    disable = true
+  [privacy.youTube]
+    disable = true
